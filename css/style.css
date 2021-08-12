@@ -1,0 +1,433 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    scroll-behavior: smooth;
+}
+
+#container {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 800px auto auto;
+    grid-template-areas: 
+    "h"
+    "m"
+    "f";
+}
+
+header {
+    grid-area: h;
+    background-image: url(../images/airplane.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+main {
+    grid-area: m;
+}
+
+footer {
+    grid-area: f;
+    background-color: #fff;
+}
+
+/*Header Area*/
+
+header section {
+    display: flex;
+    width: 75%;
+    margin: 15px auto;
+}
+
+header section #logo img {
+    width: 200px;
+}
+
+header section nav {
+    width: 100%;
+    align-self: center;
+}
+
+header section nav ul {
+    display: flex;
+    justify-content: center;
+}
+
+header section nav ul li {
+    display: inline;
+    margin: 0 5%;
+    transition: transform .3s;
+}
+
+header section nav ul li a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff;
+    font-size: 22px;
+    filter: drop-shadow(1px 1px 1px #4d4d4d);
+}
+
+header section nav ul li:hover {
+    transform: scale(1.1);
+    color: #000;
+}
+
+#slogan {
+    width: 70%;
+    margin: 50px auto;
+}
+
+#slogan p {
+    width: 25%;
+    font-size: 65px;
+    color: #fff;
+    filter: drop-shadow(1px 1px 1px #5a5a5a);
+}
+
+/*Header Ends*/
+
+/*Main*/
+/*Packages*/
+#pacotes {
+    background-color: #57BCF5;
+    width: 100%;
+}
+
+#package-content {
+    margin: 0 auto;
+}
+
+.title {
+    text-align: center;
+    color: #fff;
+    font-size: 25px;
+    filter: drop-shadow(1px 1px 1px #5a5a5a);
+}
+
+.title h2 {
+    margin: 30px 0;
+}
+
+#grid-cards-8 {
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto auto;
+    gap: 30px;
+    justify-content: center;
+    margin: 15px 0;
+}
+
+#grid-cards-8 .card-8 {
+    background-color: #fff;
+    border-radius: 10px;
+    width: 200px;
+}
+
+.card-8 {
+    text-align: center;
+    transition: transform .3s;
+}
+
+.card-8:hover {
+    transform: scale(1.05);
+}
+
+.card-8 img {
+    width: 95%;
+    border-radius: 10px;
+    margin: 5px 0;
+}
+
+.card-8 p {
+    font-size: 13px;
+    font-weight: bold;
+    margin-left: 5px;
+}
+
+p.destiny {
+    font-size: 14px;
+}
+
+p.fix-center {
+    text-align: center;
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+p.fix-price {
+    margin-top: 10px;
+    font-size: 19px;
+}
+
+a .buy {
+    margin: 15px;
+    font-size: 18px;
+    border: 1px solid rgb(5, 107, 155);    
+    border-radius: 5px;
+    background-color: rgb(57, 177, 233);
+    padding: 5px;
+    cursor: pointer;
+    color: #fff;
+    transition: transform .3s;
+}
+
+a button:hover {
+    background-color: rgb(39, 129, 170);
+    transform: scale(1.2);
+}
+
+/*Packages Ends*/
+
+/*Flights Area*/
+
+#voos {
+    background-color: #50AEE3;
+    width: 100%;
+}
+
+#grid-blocks-5 {
+    width: 60%;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto auto;
+    gap: 10px;
+    margin: 0 auto;
+    
+}
+
+.block-5 {
+    display: flex;
+    background-color: #fff;
+    padding: 15px;
+    align-items: center;
+    transition: transform .3s;
+    border-radius: 15px;
+}
+
+.block-5:hover {
+    transform: scale(1.05);
+}
+
+.levels {
+    color: #fff;
+    padding: 5px;
+    margin-right: 10px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+#level-1 {
+    background-color: rgb(1, 197, 1);
+}
+
+#level-2 {
+    background-color: rgb(0, 204, 255);
+}
+
+#level-3 {
+    background-color: rgb(247, 243, 0);
+}
+
+#level-4 {
+    background-color: rgb(224, 108, 0);
+}
+
+#level-5 {
+    background-color: rgb(197, 1, 1);
+}
+
+.price {
+    font-size: 20px;
+    margin-left: 2%;
+}
+
+.buy-block {
+    margin-left: 2%;
+}
+
+span#obs {
+    font-weight: bold;
+    text-align: center;
+    font-size: 14px;
+}
+
+/*Flight Area Ends*/
+
+/*Rating Average Area*/
+
+#avaliacoes {
+    background-color: #57BCF5;
+}
+
+#grid-blocks-3 {
+    width: 60%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto auto;
+    grid-template-areas: 
+    "h h"
+    "b1 b2"
+    "b3 b4"
+    "b5 b6";
+    margin: 0 auto;
+    gap: 25px;
+}
+
+#head {
+    grid-area: h;
+    width: 100%;
+    background-color: #fff;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    text-align: center;
+    justify-items: center;
+    border-radius: 15px;
+}
+
+#box-1 {
+    grid-area: b1;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 15px;
+}
+
+#box-2 {
+    grid-area: b2;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 15px;
+}
+
+#box-3 {
+    grid-area: b3;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 15px;
+}
+
+#box-4 {
+    grid-area: b4;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 15px;
+}
+
+#box-5 {
+    grid-area: b5;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 15px;
+}
+
+#box-6 {
+    grid-area: b6;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 15px;
+}
+
+#head h2 {
+    margin: 40px 0;
+    font-size: 29px;
+    line-height: 35px;
+    font-weight: normal;
+}
+
+.box-head {
+    display: grid;
+    grid-template-columns: 70% 30%;
+}
+
+.name h3 {
+    margin: 15px;
+    font-weight: normal;
+}
+
+.rating h3 {
+    text-align: right;
+    margin: 15px;
+}
+
+#grid-blocks-3 hr {
+    margin: 0 20px;
+}
+
+.box-body h4 {
+    margin: 15px;
+}
+
+.box-body p {
+    margin: 15px;
+    color: rgb(70, 69, 69);
+}
+
+/*Main Ends*/
+
+/*Footer Area*/
+
+#saiba-mais {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    width: 60%;
+    margin: 0 auto;
+}
+
+#saiba-mais h3 {
+    margin: 30px 0;
+    font-size: 25px;
+}
+
+#about-us, #contact, #social-media {
+    margin: 10%;
+}
+
+#media-links {
+    margin: 15px 0;
+}
+
+#media-links a img {
+    width: 40px;
+    margin: 5px;
+    transition: transform .3s;
+}
+
+#media-links a img:hover {
+    transform: scale(1.1);
+}
+
+#copyright {
+    text-align: center;
+    margin: 10px 0;
+}
+
+/*Botão de voltar ao topo*/
+
+#botao-lateral {
+    width: 60px;
+    height: 60px;
+    position: fixed;
+    right: 1%;
+    bottom: 2%;
+    background-color: rgb(233, 233, 233);
+    opacity: .7;
+    transition: 700ms;
+    border-radius: 30px;
+    text-align: center;
+}
+
+#botao-lateral:hover {
+    opacity: 1;
+}
+
+#botao-lateral img {
+    width: 90%;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+/*Fim do botão de voltar ao topo*/
