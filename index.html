@@ -139,13 +139,13 @@
                                     <option value="BR-RJ">Tóquio, Japão.</option>
                                 </select>
                                 <span><strong>Adicional: </strong></span>
-                                <select>
-                                    <option value="">Apenas vôo.</option>
-                                    <option value="">Vôo + Taxi</option>
-                                    <option value="">Vôo + Taxi + Estadia</option>
+                                <select onchange="changeValue()" id="select_id_1" >
+                                    <option value="0">Apenas vôo.</option>
+                                    <option value="1">Vôo + Taxi</option>
+                                    <option value="2">Vôo + Taxi + Estadia</option>
                                 </select>
                             </form>
-                            <h2 class="price">R$899,99</h2>
+                            <h2 class="price" id="value_price_1">R$999,99</h2>
                             <a href="" class="buy-block"><button class="buy">Comprar</button></a>
                         </div>
                         <div class="block-5">
@@ -176,13 +176,13 @@
                                     <option value="BR-RJ">Tóquio, Japão.</option>
                                 </select>
                                 <span><strong>Adicional: </strong></span>
-                                <select>
-                                    <option value="">Apenas vôo.</option>
-                                    <option value="">Vôo + Taxi</option>
-                                    <option value="">Vôo + Taxi + Estadia</option>
+                                <select onchange="changeValue()" id="select_id_2" >
+                                    <option value="0">Apenas vôo.</option>
+                                    <option value="1">Vôo + Taxi</option>
+                                    <option value="2">Vôo + Taxi + Estadia</option>
                                 </select>
                             </form>
-                            <h2 class="price">R$1359,99</h2>
+                            <h2 class="price" id="value_price_2">R$1259,99</h2>
                             <a href="" class="buy-block"><button class="buy">Comprar</button></a>
                         </div>
                         <div class="block-5">
@@ -213,13 +213,13 @@
                                     <option value="BR-RJ">Tóquio, Japão.</option>
                                 </select>
                                 <span><strong>Adicional: </strong></span>
-                                <select>
-                                    <option value="">Apenas vôo.</option>
-                                    <option value="">Vôo + Taxi</option>
-                                    <option value="">Vôo + Taxi + Estadia</option>
+                                <select onchange="changeValue()" id="select_id_3" >
+                                    <option value="0">Apenas vôo.</option>
+                                    <option value="1">Vôo + Taxi</option>
+                                    <option value="2">Vôo + Taxi + Estadia</option>
                                 </select>
                             </form>
-                            <h2 class="price">R$1799,99</h2>
+                            <h2 class="price" id="value_price_3">R$1359,99</h2>
                             <a href="" class="buy-block"><button class="buy">Comprar</button></a>
                         </div>
                         <div class="block-5">
@@ -250,13 +250,13 @@
                                     <option value="BR-RJ">Tóquio, Japão.</option>
                                 </select>
                                 <span><strong>Adicional: </strong></span>
-                                <select>
-                                    <option value="">Apenas vôo.</option>
-                                    <option value="">Vôo + Taxi</option>
-                                    <option value="">Vôo + Taxi + Estadia</option>
+                                <select onchange="changeValue()" id="select_id_4" >
+                                    <option value="0">Apenas vôo.</option>
+                                    <option value="1">Vôo + Taxi</option>
+                                    <option value="2">Vôo + Taxi + Estadia</option>
                                 </select>
                             </form>
-                            <h2 class="price">R$2459,99</h2>
+                            <h2 class="price" id="value_price_4">R$1459,99</h2>
                             <a href="" class="buy-block"><button class="buy">Comprar</button></a>
                         </div>
                         <div class="block-5">
@@ -287,13 +287,13 @@
                                     <option value="BR-RJ">Tóquio, Japão.</option>
                                 </select>
                                 <span><strong>Adicional: </strong></span>
-                                <select>
-                                    <option value="">Apenas vôo.</option>
-                                    <option value="">Vôo + Taxi</option>
-                                    <option value="">Vôo + Taxi + Estadia</option>
+                                <select onchange="changeValue()" id="select_id_5" >
+                                    <option value="0">Apenas vôo.</option>
+                                    <option value="1">Vôo + Taxi</option>
+                                    <option value="2">Vôo + Taxi + Estadia</option>
                                 </select>
                             </form>
-                            <h2 class="price">R$3899,99</h2>
+                            <h2 class="price" id="value_price_5">R$1599,99</h2>
                             <a href="" class="buy-block"><button class="buy">Comprar</button></a>
                         </div>
                         <span id="obs">*A categoria "Nível" se diz respeito ao nível de luxo, do mais baixo (1) ao mais alto (5)</span>
@@ -431,5 +431,6 @@
     <div id="botao-lateral">
         <a href="#" onclick="$('corpo').scrollTo();"><img src="images/button.png" alt=""></a>
     </div>
+    <script src="javascript/script.js"></script>
 </body>
 </html>
