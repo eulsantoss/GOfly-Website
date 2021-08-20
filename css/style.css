@@ -164,7 +164,7 @@ p.fix-price {
     font-size: 19px;
 }
 
-a .buy {
+.buy {
     margin: 15px;
     font-size: 18px;
     border: 1px solid rgb(5, 107, 155);    
@@ -176,7 +176,7 @@ a .buy {
     transition: transform .3s;
 }
 
-a button:hover {
+.buy:hover {
     background-color: rgb(39, 129, 170);
     transform: scale(1.2);
 }

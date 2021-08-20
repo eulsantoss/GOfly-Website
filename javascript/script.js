@@ -1,6 +1,14 @@
+alert('Este site é um projeto fictício de estudo e prática de Desenvolvimento Web. Por: Lucas Santos.')
+
 const additionalFly = 799.90
 const aditionalTaxi = 89.90
 const aditionalAbode = 1110.90
+
+{
+    function notBuy() {
+        alert('Opa, essa função ainda não está funcional!!')
+    }
+}
 
 function changeValue() {
     let select_1 = document.getElementById("select_id_1").value
